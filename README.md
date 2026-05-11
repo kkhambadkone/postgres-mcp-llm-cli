@@ -150,7 +150,7 @@ python pgmcp.py query "total revenue per product category this year"
 python pgmcp.py query "find all orders placed in the last 30 days"
 python pgmcp.py query "show all orders with customer first and last name"
 ```
-<img src="postgresselect.jpeg" alt="Architecture" width="700"/>
+<img src="postgresselect.jpeg" alt="SQL SELECT" width="700"/>
 
 ### Inspect the database
 
@@ -218,10 +218,10 @@ pg-mcp-cli/
 ├── seed.py            # Standalone data seeder
 ├── .env.example       # Environment variable template
 ├── requirements.txt   # Python dependencies
-└── samples/
-    ├── customers.csv  # Sample CSV schema
-    ├── orders.txt     # Sample text schema
-    └── products.xlsx  # Sample Excel schema
+├── customers.csv  # Sample CSV schema
+├── orders.txt     # Sample text schema
+└── products.xlsx  # Sample Excel schema
+└── order_items.txt  # Sample text schema 
 ```
 
 ---

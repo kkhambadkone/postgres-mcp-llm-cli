@@ -213,7 +213,7 @@ Same structure as CSV — headers in row 1, one column per row.
 ## Project structure
 
 ```
-pg-mcp-cli/
+pg-mcp-llm-cli/
 ├── pgmcp.py           # Main CLI tool
 ├── seed.py            # Standalone data seeder
 ├── .env.example       # Environment variable template

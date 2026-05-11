@@ -215,8 +215,7 @@ Same structure as CSV — headers in row 1, one column per row.
 ```
 pg-mcp-llm-cli/
 ├── pgmcp.py           # Main CLI tool
-├── seed.py            # Standalone data seeder
-├── .env.example       # Environment variable template
+├── seedtables.py            # Standalone data seeder
 ├── requirements.txt   # Python dependencies
 ├── customers.csv  # Sample CSV schema
 ├── orders.txt     # Sample text schema

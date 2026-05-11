@@ -220,7 +220,7 @@ pg-mcp-llm-cli/
 ├── requirements.txt   # Python dependencies
 ├── customers.csv  # Sample CSV schema
 ├── orders.txt     # Sample text schema
-└── products.xlsx  # Sample Excel schema
+├── products.xlsx  # Sample Excel schema 
 └── order_items.txt  # Sample text schema 
 ```
 

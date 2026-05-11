@@ -68,44 +68,6 @@ curl -s http://localhost:8000/sse | head -3
 # Expected: event: endpoint
 ```
 
-**Run on startup with launchd (recommended for Mac):**
-
-Create `~/Library/LaunchAgents/com.pgmcp.plist`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>com.pgmcp</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/path/to/pg-mcp-server/.venv/bin/python</string>
-        <string>-m</string>
-        <string>server.app</string>
-    </array>
-    <key>WorkingDirectory</key>
-    <string>/path/to/pg-mcp-server</string>
-    <key>StandardOutPath</key>
-    <string>/Users/YOUR_USERNAME/logs/pg-mcp.log</string>
-    <key>StandardErrorPath</key>
-    <string>/Users/YOUR_USERNAME/logs/pg-mcp.err</string>
-    <key>RunAtLoad</key>
-    <true/>
-    <key>KeepAlive</key>
-    <true/>
-</dict>
-</plist>
-```
-
-```bash
-mkdir -p ~/logs
-launchctl load ~/Library/LaunchAgents/com.pgmcp.plist
-launchctl list | grep pgmcp   # verify
-```
-
 ### 4. Available tools
 
 Once running, pg-mcp-server exposes 5 tools over SSE:

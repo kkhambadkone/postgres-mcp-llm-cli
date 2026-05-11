@@ -132,13 +132,14 @@ ollama pull qwen2.5
 
 ```bash
 # From CSV
-python pgmcp.py create --file samples/customers.csv
+python pgmcp.py create --file customers.csv
 
 # From Excel
-python pgmcp.py create --file samples/products.xlsx --sheet products --table products
+python pgmcp.py create --file products.xlsx --sheet products --table products
 
 # From plain text
-python pgmcp.py create --file samples/orders.txt --table orders
+python pgmcp.py create --file orders.txt --table orders
+python pgmcp.py create --file orders_items.txt --table orders_items
 ```
 
 ### Translate plain English to SQL
@@ -149,6 +150,7 @@ python pgmcp.py query "total revenue per product category this year"
 python pgmcp.py query "find all orders placed in the last 30 days"
 python pgmcp.py query "show all orders with customer first and last name"
 ```
+<img src="postgresselect.jpeg" alt="Architecture" width="700"/>
 
 ### Inspect the database
 
@@ -165,7 +167,7 @@ python pgmcp.py schema customers
 
 ```bash
 # Seed all tables
-python seed.py
+python seedtables.py
 
 # Seed specific tables
 python seed.py customers

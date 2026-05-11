@@ -1,0 +1,10 @@
+# orders table schema
+# One column per line: name  type  size  [not null]  [default value]
+
+order_id    serial
+customer_id integer    not null
+status      varchar    50     not null    default 'pending'
+total       numeric    12,2   not null
+notes       text
+shipped_at  timestamp
+created_at  timestamp  not null  default NOW()

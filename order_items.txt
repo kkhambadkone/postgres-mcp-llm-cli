@@ -1,0 +1,5 @@
+order_item_id  serial
+order_id       int      not null
+product_id     int      not null
+quantity       int      not null
+unit_price     numeric  10,2  not null

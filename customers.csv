@@ -1,0 +1,9 @@
+name,type,size,nullable,default,primary_key
+id,serial,,,false,true
+first_name,varchar,100,false,,
+last_name,varchar,100,false,,
+email,varchar,200,false,,
+phone,varchar,20,true,,
+date_of_birth,date,,true,,
+is_active,boolean,,false,true,
+created_at,timestamp,,,NOW(),

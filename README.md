@@ -35,7 +35,7 @@ git clone https://github.com/stuzero/pg-mcp-server.git
 cd pg-mcp-server
 
 # Install dependencies (requires Python 3.12+)
-uv sync
+pip install -e .
 
 # Activate the virtual environment
 source .venv/bin/activate

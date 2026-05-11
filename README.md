@@ -4,25 +4,6 @@ A command line tool for interacting with PostgreSQL databases using natural lang
 
 <img src="pg_mcp_cli_architecture.svg" alt="Architecture" width="700"/>
 
-```
-User (plain English / schema file)
-          │
-          ▼
-    pgmcp.py CLI
-   ┌──────────────────────────────────────┐
-   │  create │ query │ schema │ tables    │
-   │  seed.py │ schema files (csv/xlsx/txt)│
-   └──────────────────────────────────────┘
-       │                    │
-       ▼                    ▼
-   Ollama               pg-mcp-server
-   qwen2.5              SSE · port 8000
-   classify / generate       │
-   evaluate SQL               ▼
-                         PostgreSQL
-                         port 5432
-```
-
 ---
 
 ## Features
